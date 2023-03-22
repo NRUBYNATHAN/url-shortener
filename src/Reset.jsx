@@ -2,7 +2,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useFormik } from "formik";
 import { useNavigate } from 'react-router-dom';
-
+import {API} from "./global";
 
 
 
@@ -21,7 +21,7 @@ const navigate=useNavigate()
     },
     onSubmit:async (value)=>{
       console.log(value)
-     const data= await fetch(`http://localhost:4000/reset/${params.get("id")}/${params.get("token")}`,{
+     const data= await fetch(`${API}/reset/${params.get("id")}/${params.get("token")}`,{
      method:"POST",
      headers: {"Content-type": "application/json",},
      body:JSON.stringify(value)

@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import * as yup from "yup";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import {API} from "./global";
 export function Signup() {
   const navigate=useNavigate();
   const[formstate,setFormstate]=useState("success")
@@ -31,7 +32,7 @@ onSubmit:(value)=>{
 
   })
   const signupuser=async (value)=>{
-   const data= await fetch("http://localhost:4000/signup",{
+   const data= await fetch(`${API}/signup`,{
     method:"POST",
     body:JSON.stringify(value),
     headers:{"Content-Type": "application/json",},

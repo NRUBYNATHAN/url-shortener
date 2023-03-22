@@ -3,7 +3,7 @@
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useFormik } from 'formik';
-
+import {API} from "./global";
 
 export function Forgot() {
 
@@ -15,7 +15,7 @@ export function Forgot() {
     },
     onSubmit:async (value)=>{
       console.log(value)
-     const data= await fetch("http://localhost:4000/forgot",{
+     const data= await fetch(`${API}/forgot`,{
      method:"POST",
      headers: {"Content-type": "application/json",},
      body:JSON.stringify(value)

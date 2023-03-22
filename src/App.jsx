@@ -1,7 +1,7 @@
 
 
 import './App.css'
-import { Url } from './Url';
+
 import {Routes, Route, useNavigate } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -33,12 +33,12 @@ export default function App() {
        <Routes>
         
           <Route path="/" element={<Home />} />
-          <Route path="/url-short" element={ <ProductedRoute><Url/></ProductedRoute>} />
+          {/* <Route path="/url-short" element={ <Url/></ProductedRoute>} /> */}
           <Route path="/signup" element={ <Signup/>} />
           <Route path="/login" element={ <Login/>} />
           <Route path="/forgot" element={ <Forgot/>} />
           <Route path="/reset" element={ <Reset/>} />
-          <Route path="/fullurl" element={ <Fullurl/>} />
+          <Route path="/fullurl" element={<ProductedRoute><Fullurl/></ProductedRoute> } />
           
        
       </Routes>
