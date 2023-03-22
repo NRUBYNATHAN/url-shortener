@@ -1,0 +1,67 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap:10px;
+  margin-top:100px ;
+}
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+body{
+  margin: 0;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+.urlpage{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+.div{
+  padding: 40px;
+  margin-left: 100px;
+}
+.sig{
+  
+font-size: 30px;
+  margin-left: 100px;
+}
+.sig1{
+  margin: 0;
+  border: 1px solid white;
+  display: inline;
+  background-color: darkcyan;
+  color: rgb(244, 241, 241);
+  padding: 10px;
+  border-radius: 10px;
+}
+.sig2{
+  /* margin-left: 100px; */
+  margin: 0;
+  border: 1px solid white;
+  display: inline;
+  background-color: rgb(250, 50, 10);
+  color: rgb(244, 241, 241);
+  padding: 10px;
+  border-radius: 10px;
+}
+.head{
+  color: brown;
+}
+.ho{
+  margin-left: 20px;
+}
